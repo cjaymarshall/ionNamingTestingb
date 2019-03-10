@@ -7,7 +7,7 @@ if (env === 'production') {
         dialect: 'postgres'
     });
 } else {
-    const sequelize = new Sequelize(undefined, undefined, undefined, {
+    sequelize = new Sequelize(undefined, undefined, undefined, {
         'dialect': 'sqlite',
         'storage': __dirname + '/data/compound.sqlite',
          operatorsAliases: false
